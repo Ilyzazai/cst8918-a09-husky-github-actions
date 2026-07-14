@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+set -e
+
+terraform fmt -check -recursive
+terraform -chdir=infrastructure validate
+(cd infrastructure && tflint)
