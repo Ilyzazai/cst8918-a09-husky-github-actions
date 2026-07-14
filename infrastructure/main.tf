@@ -13,7 +13,7 @@ provider "azurerm" {
   features {}
 }
 
-resource "azurerm_resource_group" "lab9" {
+resource   "azurerm_resource_group"   "lab9" {
   name     = "rg-cst8918-a09-ilyas"
   location = "Canada Central"
 }
